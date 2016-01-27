@@ -1,7 +1,7 @@
 fname = raw_input('Enter file name: ')
 if len(fname) < 1: fname = 'mbox-short.txt'
 line_count = 0
-fn = open(fname);
+fn = open(fname)
 for line in fn:
 	if not line.startswith('From '): continue
 	print line.split()[1]
